@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    azure:
+      storage:
+        blob:
+          account-name: [storage10242]
+          account-key: [TqUmou860Ul1cpKD7iA9WID7p9Cc71RgFj1PYpInh+9f8ZRcdWQOUOqFdWSJWvdo+LMmV/dUipSm+ASt36x+0w==]
+          endpoint: [DefaultEndpointsProtocol=https;AccountName=storage10242;AccountKey=TqUmou860Ul1cpKD7iA9WID7p9Cc71RgFj1PYpInh+9f8ZRcdWQOUOqFdWSJWvdo+LMmV/dUipSm+ASt36x+0w==;EndpointSuffix=core.windows.net]
