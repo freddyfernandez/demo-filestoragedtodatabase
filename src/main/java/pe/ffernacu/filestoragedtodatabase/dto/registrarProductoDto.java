@@ -26,8 +26,6 @@ public class registrarProductoDto implements Serializable {
         registrarProductoDto registrarProductoDto = new registrarProductoDto();
         registrarProductoDto.setCodigo(producto.getCodigo());
         registrarProductoDto.setNombre(producto.getNombre());
-        registrarProductoDto.setImgAnversoUrl(producto.getImgAnversoUrl());
-        registrarProductoDto.setImgReversoUrl(producto.getImgReversoUrl());
         return registrarProductoDto;
     }
 

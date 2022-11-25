@@ -14,15 +14,11 @@ import java.util.Optional;
 public class buscarPorCodigoDto implements Serializable {
     private int codigo;
     private String nombre;
-    private String imgAnversoUrl;
-    private String imgReversoUrl;
 
     public static buscarPorCodigoDto buscarPorCodigoResponse(Optional<Producto> p) {
         buscarPorCodigoDto productoResponse= new buscarPorCodigoDto();
         productoResponse.setCodigo(p.get().getCodigo());
         productoResponse.setNombre(p.get().getNombre());
-        productoResponse.setImgAnversoUrl((p.get().getImgAnversoUrl()));
-        productoResponse.setImgReversoUrl(p.get().getImgReversoUrl());
         return productoResponse;
     }
 

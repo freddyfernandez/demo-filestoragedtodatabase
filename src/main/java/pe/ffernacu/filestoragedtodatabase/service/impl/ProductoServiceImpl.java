@@ -42,7 +42,7 @@ public class ProductoServiceImpl implements ProductoService {
     }
     @Async(AsyncExecutorConfig.APP_ASYNC_EXECUTOR)
     @Override
-    public void UploadFileService(MultipartFile fileAnverso,MultipartFile fileReverso,String data) throws IOException {
+    public void UploadFileService(MultipartFile fileAnverso,MultipartFile fileReverso) throws IOException {
         BlobServiceClient storageClient = new BlobServiceClientBuilder()
                 .endpoint(blobStorageConfig.getUriStorage()).connectionString(blobStorageConfig.getMyConnectionString())
                 .buildClient();

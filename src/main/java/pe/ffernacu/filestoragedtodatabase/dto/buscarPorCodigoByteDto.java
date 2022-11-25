@@ -8,13 +8,11 @@ import java.io.Serializable;
 @Setter
 public class buscarPorCodigoByteDto implements Serializable {
     private int codigo;
-    private String nombre;
     private byte[] imgAnverso;
     private byte[] imgReverso;
-    public static buscarPorCodigoByteDto buscarPorCodigoByteResponse(buscarPorCodigoDto p) {
+    public static buscarPorCodigoByteDto buscarPorCodigoByteResponse(buscarPorCodigoUriDto p) {
         buscarPorCodigoByteDto productoResponse= new buscarPorCodigoByteDto();
         productoResponse.setCodigo(p.getCodigo());
-        productoResponse.setNombre(p.getNombre());
         return productoResponse;
     }
 }

@@ -11,6 +11,6 @@ public interface ProductoService {
     public Producto registrar(Producto  producto);
     public List<Producto> listarTodos();
     public Optional<Producto> buscarXid(int codigo);
-    public void UploadFileService(MultipartFile file, MultipartFile file2, String data) throws IOException;
+    public void UploadFileService(MultipartFile file, MultipartFile file2) throws IOException;
     public byte[] getBytes(String uriFile) throws IOException;
 }
